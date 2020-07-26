@@ -1,0 +1,93 @@
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
+}
+
+// Interstitial preloader
+
+#adCountDown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    display: none;
+}
+
+#adCountDown h5,
+#adCountDown h3 {
+    color: #fff;
+    font-family: 'Play', sans-serif;
+}
+
+#adCountDown h5 {
+    margin-top: 10%;
+    font-size: 25px;
+}
+
+#adCountDown h3 {
+    font-size: 60px;
+}
+
+//---------------------------------------------------
+// Video Ad
+#videoAd {
+    display: none;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.94);
+    color: #fff;
+    font-family: 'Acme';
+    width: 100%;
+    height: 100%;
+
+    h3 {
+        margin-top: 45%;
+    }
+
+    h4 {
+        margin-top: -10px;
+        margin-bottom: 34px;
+    }
+
+    button {
+        background: #32a8d8;
+        border: none;
+        color: #fff;
+        padding: 16px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 48px;
+        cursor: pointer;
+        outline: inherit;
+
+        &.watch-video {
+            animation: pulse 2s infinite;
+        }
+
+        &.exit-video {
+            margin-top: 26px;
+            background: transparent;
+            border: 2px solid #eee;
+            padding: 3px 26px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    }
+}
