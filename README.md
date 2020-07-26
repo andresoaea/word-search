@@ -1,4 +1,5 @@
 ### Word Searh Now
 
-Word Search Now is an HTML5 game created for Facebook Instant Games platform
+Word Search Now is an HTML5 game created for Facebook Instant Games platform and it's built using Phaser3 javascript framework.
+
 In this game, the player should find the specified words in a letters puzzle.
